@@ -9,6 +9,7 @@
 
 
     <Button
+    android:id="@+id/shuffle_button"
     android:layout_height="wrap_content"
     android:layout_width="wrap_content"
     android:text="@string/match_button"
@@ -17,15 +18,44 @@
     app:layout_constraintBottom_toBottomOf="parent"
         />
 
-
     <ImageView
         android:id="@+id/head_image_view"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="468dp"
+        android:layout_height="242dp"
+        android:layout_marginTop="16dp"
+        android:adjustViewBounds="true"
         android:src="@drawable/monster1_head"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_totopOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
         tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/body_image_view"
+        android:layout_width="458dp"
+        android:layout_height="247dp"
+        android:layout_marginTop="196dp"
+        android:adjustViewBounds="true"
+        android:src="@drawable/monster1_body"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/head_image_view"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/feet_image_view"
+        android:layout_width="455dp"
+        android:layout_height="313dp"
+        android:layout_marginTop="380dp"
+        android:adjustViewBounds="true"
+        android:src="@drawable/monster1_feet"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
